@@ -1,0 +1,26 @@
+import React from 'react';
+
+
+export const RightDashBg = (props: any) => {
+  return (
+    <svg className={props.className}
+         onClick={props.onClick} width="479" height="132" viewBox="0 0 479 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="path-1-inside-1_0_353" fill="white">
+        <path fillRule="evenodd" clipRule="evenodd" d="M0.853516 132C16.5028 114.281 25.9994 90.9993 25.9994 65.5C25.9994 40.4776 16.8547 17.591 1.72508 0H468.999C474.521 0 478.999 4.47715 478.999 10V122C478.999 127.523 474.521 132 468.999 132H0.853516Z"/>
+      </mask>
+      <path fillRule="evenodd" clipRule="evenodd" d="M0.853516 132C16.5028 114.281 25.9994 90.9993 25.9994 65.5C25.9994 40.4776 16.8547 17.591 1.72508 0H468.999C474.521 0 478.999 4.47715 478.999 10V122C478.999 127.523 474.521 132 468.999 132H0.853516Z" fill="#09122e"/>
+      <path d="M0.853516 132L0.103983 131.338L-1.36382 133H0.853516V132ZM1.72508 0V-1H-0.453992L0.966921 0.652074L1.72508 0ZM24.9994 65.5C24.9994 90.7463 15.5981 113.794 0.103983 131.338L1.60305 132.662C17.4075 114.767 26.9994 91.2524 26.9994 65.5H24.9994ZM0.966921 0.652074C15.9465 18.0686 24.9994 40.7258 24.9994 65.5H26.9994C26.9994 40.2294 17.763 17.1135 2.48323 -0.652074L0.966921 0.652074ZM468.999 -1H1.72508V1H468.999V-1ZM479.999 10C479.999 3.92487 475.074 -1 468.999 -1V1C473.969 1 477.999 5.02944 477.999 10H479.999ZM479.999 122V10H477.999V122H479.999ZM468.999 133C475.074 133 479.999 128.075 479.999 122H477.999C477.999 126.971 473.969 131 468.999 131V133ZM0.853516 133H468.999V131H0.853516V133Z" fill="#32a2db" mask="url(#path-1-inside-1_0_353)"/>
+      <defs>
+        <linearGradient id="paint0_linear_0_353" x1="0.853516" y1="77.6814" x2="467.902" y2="77.6814" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#152045"/>
+          <stop offset="1" stopColor="#081029"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_0_353" x1="239.926" y1="0" x2="239.926" y2="132" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#6B82CC"/>
+          <stop offset="1" stopColor="#283A7D"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+  );
+};

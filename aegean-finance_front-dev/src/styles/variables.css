@@ -1,0 +1,7 @@
+body {
+	--wcm-z-index: 1300;
+}
+
+img {
+	max-width: 100%;
+}

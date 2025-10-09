@@ -1,0 +1,442 @@
+@keyframes transX {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.tokenDropdownBody {
+  * {
+    scrollbar-face-color: transparent;
+    scrollbar-track-color: #94a1ca;
+    scrollbar-color: transparent;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #94a1ca;
+      border-radius: 16px;
+    }
+  }
+
+  position: relative;
+  .tokenDropdown {
+    position: relative;
+    border: 1px solid #339dff;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #172b61 0%, rgba(17, 36, 87, 0.67) 94.08%);
+    max-width: 253px;
+    width: 100%;
+
+    padding: 15px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .dropdownTokenInfo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      span {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 0.28px;
+      }
+    }
+
+    .arrowIcon {
+      transition: all 0.2s linear;
+      transform: rotate(0deg);
+    }
+
+    .arrowIconOpen {
+      transition: all 0.2s linear;
+      transform: rotate(-180deg);
+    }
+  }
+  .assetsListBody {
+    position: absolute;
+    bottom: -310px;
+    right: 0;
+    width: 100%;
+    max-height: 300px;
+    z-index: 100;
+    border-radius: 10px;
+    border: 1px solid var(--blue, #37f);
+    background: linear-gradient(90deg, #172b61 0%, rgba(17, 36, 87, 0.67) 94.08%);
+    overflow: hidden;
+    .assetsList {
+      margin: 10px 0;
+      width: 100%;
+      max-height: 300px;
+      list-style: none;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 20px;
+
+      .assetItem {
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6px 12px;
+          transition: all 0.2s linear;
+          cursor: pointer;
+
+          &:hover {
+            backdrop-filter: brightness(1.3);
+            span {
+              text-decoration: none !important;
+            }
+          }
+
+          div {
+            flex: 1;
+          }
+          span {
+            flex: 1;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.topInfoPanelContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  @media (max-width: 910px) {
+    flex-wrap: wrap;
+  }
+
+  .topInfoPanelItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    border-left: 2px solid #2a3765;
+    @media (max-width: 910px) {
+      width: 50%;
+      border-left: none;
+      margin-bottom: 20px;
+    }
+    &:first-child {
+      border-left: none;
+    }
+
+    .topInfoPanelTitle {
+      color: #9fb1e8;
+      font-family: Poppins, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+    }
+
+    .topInfoPanelValue {
+      color: #fff;
+      font-family: Poppins, sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 0.22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      .panelValue {
+        * {
+          color: #fff !important;
+          font-family: Poppins, sans-serif !important;
+          font-size: 22px !important;
+          font-style: normal !important;
+          font-weight: 700 !important;
+          line-height: 100% !important;
+          letter-spacing: 0.22px !important;
+        }
+        display: inline-block;
+        max-width: 130px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+
+      }
+
+      .panelSymbol {
+      }
+    }
+  }
+}
+
+.labelsList {
+  width: 100%;
+  // transform: translateX(-24px);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.labelItem {
+  flex: 1;
+  padding-bottom: 18px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  color: #94a1ca;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #2a3765;
+}
+
+.labelItemActive {
+  position: relative;
+  color: #3377ff;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #3377ff;
+    animation: transX 0.2s linear;
+  }
+}
+
+.graphLabelsList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  .labelItem {
+    padding-bottom: 0;
+    border-bottom: none;
+    width: 123px;
+  }
+  .labelItemActive {
+    &::after {
+      bottom: -18px;
+    }
+  }
+}
+
+.graphInfoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 21px;
+
+  .graphInfoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    .graphInfoLabel {
+      font-weight: 400 !important;
+      font-size: 12px;
+      line-height: 12px;
+      color: #94a1ca;
+    }
+    .graphInfoValue {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.percentageInputWrapper {
+  width: 100%;
+  margin-bottom: 50px;
+  .inputPanel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .amountText {
+      color: #798dca;
+      font-feature-settings:
+        'clig' off,
+        'liga' off;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 26px;
+    }
+
+    .percentageInput {
+      width: 100%;
+      text-align: center;
+      background: transparent;
+      color: white;
+      font-family: Poppins, sans-serif;
+      font-size: 51px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 51px;
+      border: none;
+
+      &::placeholder {
+        color: #94a1ca;
+      }
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+
+    .maxBtn {
+      border: none;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      color: #37f;
+      font-family: Poppins, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      cursor: pointer;
+    }
+  }
+
+  .amountInUsd {
+    width: 100%;
+    text-align: center;
+    color: #94a1ca;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background: #94a1ca;
+    position: relative;
+    margin-bottom: -8px;
+
+    .lineActive {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 3px;
+      background: #3377ff;
+    }
+  }
+
+  .percentageAmountList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .percentageAmountItem {
+      display: flex;
+      align-items: center;
+      width: 25%;
+      position: relative;
+
+      &:last-child {
+        width: 12px;
+        .line {
+          display: none;
+        }
+        .value {
+          left: -15px;
+        }
+      }
+
+      .dot {
+        min-width: 12px;
+        min-height: 12px;
+        background: #94a1ca;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .dotActive {
+        background: #3377ff;
+      }
+
+      .value {
+        position: absolute;
+        bottom: -30px;
+        left: -5px;
+        color: #94a1ca;
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; /* 162.5% */
+      }
+    }
+  }
+}
+
+.graphDetailsList {
+  list-style: none;
+  margin: 0;
+  padding: 24px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .graphDetailsItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    .graphDetailsLabel {
+      color: #94a1ca;
+    }
+
+    .graphDetailsValue {
+      color: white;
+    }
+  }
+}
+
+.graphWrapper {
+}

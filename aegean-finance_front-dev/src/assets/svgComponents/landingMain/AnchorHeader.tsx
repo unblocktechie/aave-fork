@@ -1,0 +1,142 @@
+import React from "react";
+
+const AnchorHeader = () => {
+	return (
+		<svg
+			width="42"
+			height="47"
+			viewBox="0 0 42 47"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<title>Anchor</title>
+			<g filter="url(#filter0_i_237_1677)">
+				<path
+					d="M17.8134 0.825053C19.714 -0.275018 22.0556 -0.275018 23.9561 0.825053L38.6981 9.35784C40.5987 10.4579 41.7695 12.4909 41.7695 14.6911V31.7567C41.7695 33.9568 40.5987 35.9898 38.6981 37.0899L23.9561 45.6227C22.0556 46.7227 19.714 46.7227 17.8134 45.6227L3.07138 37.0899C1.1708 35.9898 0 33.9568 0 31.7567V14.6911C0 12.4909 1.1708 10.4579 3.07138 9.35784L17.8134 0.825053Z"
+					fill="url(#paint0_linear_237_1677)"
+				/>
+			</g>
+			<path
+				fillRule="evenodd"
+				clipRule="evenodd"
+				d="M37.9674 10.6268L23.2254 2.09399C21.777 1.25566 19.9925 1.25566 18.5442 2.09399L3.80216 10.6268C2.35379 11.4651 1.46155 13.0144 1.46155 14.6911V31.7567C1.46155 33.4333 2.35379 34.9826 3.80216 35.8209L18.5442 44.3537C19.9925 45.1921 21.777 45.1921 23.2254 44.3537L37.9674 35.8209C39.4157 34.9826 40.308 33.4333 40.308 31.7567V14.6911C40.308 13.0144 39.4157 11.4651 37.9674 10.6268ZM23.9561 0.825053C22.0556 -0.275017 19.714 -0.275018 17.8134 0.825053L3.07138 9.35784C1.1708 10.4579 0 12.4909 0 14.6911V31.7567C0 33.9568 1.1708 35.9898 3.07138 37.0899L17.8134 45.6227C19.714 46.7227 22.0556 46.7227 23.9561 45.6227L38.6981 37.0899C40.5987 35.9898 41.7695 33.9568 41.7695 31.7567V14.6911C41.7695 12.4909 40.5987 10.4579 38.6981 9.35784L23.9561 0.825053Z"
+				fill="url(#paint1_linear_237_1677)"
+			/>
+			<g filter="url(#filter1_d_237_1677)">
+				<path
+					fillRule="evenodd"
+					clipRule="evenodd"
+					d="M16.6857 8.81859C16.3416 10.1657 17.0906 10.9947 17.0906 10.9947C17.4954 10.2486 19.2768 9.81338 19.8436 10.3729C20.1209 10.6061 20.1268 10.8889 20.1317 11.1194C20.1368 11.3601 20.1407 11.5437 20.4509 11.5543C21.0581 11.575 24.6209 11.5957 24.6209 11.5957L22.1715 10.5595L24.6209 9.52323H21.0379L20.9772 9.00511C21.0581 8.03105 17.0299 7.47149 16.6857 8.81859ZM28.9832 26.9841C35.5823 14.6322 17.121 11.6064 17.121 11.6064C22.5258 19.1916 20.0764 29.2431 20.0764 29.2431C27.2221 21.6372 28.9832 26.9841 28.9832 26.9841ZM17.0906 32.3524C17.6441 32.1635 18.4785 31.6703 19.4267 31.0566C18.5414 30.3236 16.5405 29.3969 13.5685 32.1687C14.6304 31.0781 19.4269 25.2699 17.293 12.2174C17.293 12.2174 20.0601 17.923 19.9564 30.7095C20.3794 30.4296 20.8177 30.1336 21.2581 29.8361C23.204 28.522 25.1917 27.1797 26.0783 27.0676C27.7382 26.8811 30.0661 27.0883 30.0661 27.0883C30.0661 27.0883 24.4927 34.2816 25.7545 35.6269C26.6856 36.0207 14.5198 35.3782 14.5198 35.3782L12.6979 32.7255C12.6979 32.7255 15.1473 33.0156 17.0906 32.3524ZM13.366 32.3618C13.3681 32.3618 13.4417 32.2989 13.5685 32.1687C13.5015 32.2312 13.4339 32.2955 13.366 32.3618Z"
+					fill="url(#paint2_linear_237_1677)"
+				/>
+			</g>
+			<defs>
+				<filter
+					id="filter0_i_237_1677"
+					x="0"
+					y="0"
+					width="43.7761"
+					height="48.4543"
+					filterUnits="userSpaceOnUse"
+					colorInterpolationFilters="sRGB"
+				>
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="BackgroundImageFix"
+						result="shape"
+					/>
+					<feColorMatrix
+						in="SourceAlpha"
+						type="matrix"
+						values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						result="hardAlpha"
+					/>
+					<feOffset dx="2.00657" dy="2.00657" />
+					<feGaussianBlur stdDeviation="1.33771" />
+					<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+					<feColorMatrix
+						type="matrix"
+						values="0 0 0 0 0.0875 0 0 0 0 0.137083 0 0 0 0 0.3 0 0 0 1 0"
+					/>
+					<feBlend
+						mode="normal"
+						in2="shape"
+						result="effect1_innerShadow_237_1677"
+					/>
+				</filter>
+				<filter
+					id="filter1_d_237_1677"
+					x="11.268"
+					y="7.30467"
+					width="20.5702"
+					height="30.5949"
+					filterUnits="userSpaceOnUse"
+					colorInterpolationFilters="sRGB"
+				>
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
+					<feColorMatrix
+						in="SourceAlpha"
+						type="matrix"
+						values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						result="hardAlpha"
+					/>
+					<feOffset dy="0.714983" />
+					<feGaussianBlur stdDeviation="0.714983" />
+					<feComposite in2="hardAlpha" operator="out" />
+					<feColorMatrix
+						type="matrix"
+						values="0 0 0 0 0.05125 0 0 0 0 0.0804815 0 0 0 0 0.170833 0 0 0 1 0"
+					/>
+					<feBlend
+						mode="normal"
+						in2="BackgroundImageFix"
+						result="effect1_dropShadow_237_1677"
+					/>
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="effect1_dropShadow_237_1677"
+						result="shape"
+					/>
+				</filter>
+				<linearGradient
+					id="paint0_linear_237_1677"
+					x1="20.8848"
+					y1="-0.952624"
+					x2="20.8848"
+					y2="47.4005"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stopColor="#2F3F70" />
+					<stop offset="1" stopColor="#172450" />
+				</linearGradient>
+				<linearGradient
+					id="paint1_linear_237_1677"
+					x1="3.5308e-07"
+					y1="15.482"
+					x2="39.2963"
+					y2="15.482"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stopColor="#3377FF" />
+					<stop offset="1" stopColor="#33B6FF" />
+				</linearGradient>
+				<linearGradient
+					id="paint2_linear_237_1677"
+					x1="12.6979"
+					y1="17.2643"
+					x2="29.3596"
+					y2="17.2643"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stopColor="#3377FF" />
+					<stop offset="1" stopColor="#33B6FF" />
+				</linearGradient>
+			</defs>
+		</svg>
+	);
+};
+
+export default AnchorHeader;

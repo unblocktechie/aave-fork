@@ -1,0 +1,118 @@
+@keyframes transX {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #2a3765;
+  margin: 0;
+  width: calc(100% + 48px);
+  transform: translateX(-24px);
+
+  .headerItem {
+    flex: 1;
+    text-align: center;
+    color: #94a1ca;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: #3377ff;
+    }
+  }
+
+  .headerItemActive {
+    position: relative;
+    color: #3377ff;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #3377ff;
+      animation: transX 0.2s linear;
+    }
+  }
+
+  .headerItemDisabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    &:hover {
+      color: #94a1ca;
+      opacity: 0.3;
+    }
+  }
+
+  .headerItemSecondary {
+    &:hover {
+      color: #f59238 !important;
+    }
+  }
+
+  .headerItemSecondary.headerItemActive {
+    color: #f59238 !important;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #f59238 !important;
+      animation: transX 0.2s linear;
+    }
+  }
+}
+
+.tokenWrapper {
+  background-color: #162148;
+  border-radius: 50%;
+  padding: 10px 10px 8px;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  z-index: 1000;
+  .tokenIcon {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.tokenLabel {
+  position: absolute;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  color: white;
+  padding: 1px 13px;
+  background-color: #3377ff;
+  border-radius: 6px;
+
+  transform: translateX(50%);
+  right: 50%;
+  top: 23px;
+  z-index: 1001;
+}
+
+.tokenLabelSecondary {
+  background-color: #f59238;
+}
+

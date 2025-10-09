@@ -1,0 +1,208 @@
+.marketInfoItemTitle {
+  font-size: 17px;
+  line-height: 17px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-bottom: 2px dashed;
+}
+
+.marketInfoItemWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: 560px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .marketInfoItem {
+      width: 100%;
+    }
+  }
+  .marketInfoItem {
+    flex: 1;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #32a2db;
+    background-color: #09122e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+
+    .valueWrapper {
+      font-size: 34px;
+      line-height: 34px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
+  }
+}
+
+.tSupplyLabel {
+  font-size: 13px;
+  line-height: 13px;
+  color: #94a1ca;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.marketChartWrapper {
+  max-width: 400px;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: #09122e;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 923px) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .marketInfoItemTitle {
+    display: inline-block;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  .marketChartBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .marketChartInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .tSupply {
+        .dot {
+          display: inline-block;
+          width: 9px !important;
+          height: 9px !important;
+          border-radius: 50%;
+          padding-right: 6px;
+          background-color: #00d395;
+        }
+
+        .percentage {
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 400;
+          display: inline-block;
+          transform: translateY(-1px);
+          font-family: 'Poppins', sans-serif;
+        }
+      }
+
+      .tBorrowed {
+        .dot {
+          background-color: #ea9650;
+        }
+      }
+    }
+  }
+}
+
+.chartAndTopWrapper {
+  margin-top: 21px;
+  display: flex;
+  gap: 27px;
+  @media (max-width: 923px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .borrowSupplyTopWrapper {
+    padding: 25px;
+    background-color: #09122e;
+    border-radius: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .marketInfoItemTitle {
+      display: inline-flex;
+      max-width: 110px;
+      width: 100%;
+    }
+
+    .borrowSupplyTopBody {
+      display: flex;
+      gap: 12px;
+
+      .supplyTop,
+      .borrowTop {
+        flex: 1;
+        text-align: center;
+
+        .tSupplyLabel {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .topList {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .topItem {
+            .topItemInfo {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 4px;
+
+              .symbol {
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 26px;
+                text-align: left;
+              }
+
+              .percentage {
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 26px;
+                text-align: right;
+                color: #00d395;
+              }
+            }
+
+            .sliderWrapper {
+              position: relative;
+              width: 100%;
+              .sliderActive {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 5px;
+                height: 6px;
+                background-color: #3377ff;
+              }
+
+              .sliderNonActive {
+                border-radius: 5px;
+                height: 6px;
+                background-color: #2f3f70;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
