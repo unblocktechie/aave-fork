@@ -1,0 +1,9 @@
+{
+  "network": "fuji",
+  "AaveOracleAddress": "0xB9107870a2e22b9cd4B51ED5483212Cb9eAE0329",
+  "AaveOracleStartBlock": 17887278,
+  "PoolAddressesProviderRegistryAddress": "0xC1D9847913EA269dDA16E372b51F95fF0c057C6d",
+  "PoolAddressesProviderRegistryStartBlock": 17887150,
+  "RewardsControllerAddress": "0xe39e0498cB9df939b992f935f95936eAEdA7431c",
+  "RewardsControllerStartBlock": 17887304
+}
