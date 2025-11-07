@@ -43,10 +43,10 @@ export const navigation: Navigation[] = [
     title: `Markets`,
     dataCy: 'menuMarkets',
   },
-  {
+   {
     link: ROUTES.reserveOverview(
-      '0x6031a903e40d0cf8c23bf4ab86f9fc9108834119',
-      CustomMarket.proto_mumbai
+      '0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664',
+      CustomMarket.proto_avalanche
     ),
     title: `Overview`,
   },

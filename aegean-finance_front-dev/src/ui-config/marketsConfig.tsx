@@ -6,6 +6,9 @@ import {
   AaveV2Goerli,
   AaveV2Mumbai,
   AaveV2Polygon,
+  AaveV2Avalanche,
+
+
 } from '@bgd-labs/aave-address-book';
 import { ReactNode } from 'react';
 
@@ -140,13 +143,13 @@ export const marketsData: {
     },
     subgraphUrl: 'https://api.studio.thegraph.com/query/52799/forward-finance/v0.0.5',
     addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER: '0x4443D2D14c5Fe0CF0FC1e9dD0a352618b6397bF1',
-      LENDING_POOL: '0xbcE31b00F9C99A76CD6Aee8A0416D2efaFCeCB8C',
-      WETH_GATEWAY: '0x85d430557A8eFfC348331188ff53d939c8C5a09A',
+      LENDING_POOL_ADDRESS_PROVIDER: AaveV2Fuji.POOL_ADDRESSES_PROVIDER,
+      LENDING_POOL: AaveV2Fuji.POOL,
+      WETH_GATEWAY: AaveV2Fuji.WETH_GATEWAY,
       FAUCET: AaveV2Fuji.FAUCET,
-      WALLET_BALANCE_PROVIDER: '0x0CCD53F7c39302043912B4142Ca7698540A07472',
-      UI_POOL_DATA_PROVIDER: '0x09dE0CC264984840C3c0DE77532d5E5Bfe57618f',
-      UI_INCENTIVE_DATA_PROVIDER: '0x6ce2BD4979D938dE6D655017117F301de1d195ac',
+      WALLET_BALANCE_PROVIDER: AaveV2Fuji.WALLET_BALANCE_PROVIDER,
+      UI_POOL_DATA_PROVIDER: AaveV2Fuji.UI_POOL_DATA_PROVIDER,
+      UI_INCENTIVE_DATA_PROVIDER: AaveV2Fuji.UI_INCENTIVE_DATA_PROVIDER,
     },
   },
   [CustomMarket.proto_avalanche]: {
@@ -161,36 +164,24 @@ export const marketsData: {
     },
     subgraphUrl: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v2-avalanche',
     addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER:
-        '0x1336EeA64D6A6B8085191308968087dea143AfED' ||
-        process.env.NEXT_PUBLIC_AVALANCHE_LENDING_POOL_ADDRESS_PROVIDER ||
-        '',
-      LENDING_POOL:
-        '0x88B42e50Bc061AfBcF221bAeBcbBeD8EDdC29A9F' ||
-        process.env.NEXT_PUBLIC_AVALANCHE_LENDING_POOL ||
-        '',
-      WETH_GATEWAY:
-        '0x6E0137825B06e5E983439E76Fc6b4c5A40359A4b' ||
-        process.env.NEXT_PUBLIC_AVALANCHE_WETH_GATEWAY ||
-        '',
-      SWAP_COLLATERAL_ADAPTER: process.env.NEXT_PUBLIC_AVALANCHE_SWAP_COLLATERAL_ADAPTER || '',
+      LENDING_POOL_ADDRESS_PROVIDER:  AaveV2Avalanche.POOL_ADDRESSES_PROVIDER,
+        
+       
+      LENDING_POOL:AaveV2Avalanche.POOL,
+      WETH_GATEWAY:AaveV2Avalanche.WETH_GATEWAY
+        ,
+      SWAP_COLLATERAL_ADAPTER: AaveV2Avalanche.SWAP_COLLATERAL_ADAPTER,
       REPAY_WITH_COLLATERAL_ADAPTER:
-        process.env.NEXT_PUBLIC_AVALANCHE_REPAY_WITH_COLLATERAL_ADAPTER,
+        AaveV2Avalanche.REPAY_WITH_COLLATERAL_ADAPTER,
       WALLET_BALANCE_PROVIDER:
-        '0x625C861fC7A5C75eBc3E7F273B66b94A76F078C9' ||
-        process.env.NEXT_PUBLIC_AVALANCHE_WALLET_BALANCE_PROVIDER ||
-        '',
+        AaveV2Avalanche.WALLET_BALANCE_PROVIDER,
       UI_POOL_DATA_PROVIDER:
-        '0x3C04eFaED53ab8b35eD8D58F075cdCb0D22603Db' ||
-        process.env.NEXT_PUBLIC_AVALANCHE_UI_POOL_DATA_PROVIDER ||
-        '',
+        AaveV2Avalanche.UI_POOL_DATA_PROVIDER,
       UI_INCENTIVE_DATA_PROVIDER:
-        '0xdD738b624280eEFf742471e0F22D32dB1c3bd07a' ||
-        process.env.NEXT_PUBLIC_AVALANCHE_UI_INCENTIVE_DATA_PROVIDER ||
-        '',
-      COLLECTOR: process.env.NEXT_PUBLIC_AVALANCHE_COLLECTOR,
-      V3_MIGRATOR: process.env.NEXT_PUBLIC_AVALANCHE_V3_MIGRATOR,
-      DEBT_SWITCH_ADAPTER: process.env.NEXT_PUBLIC_AVALANCHE_DEBT_SWITCH_ADAPTER,
+        AaveV2Avalanche.UI_INCENTIVE_DATA_PROVIDER,
+      COLLECTOR: AaveV2Avalanche.COLLECTOR,
+      V3_MIGRATOR: AaveV2Avalanche.MIGRATION_HELPER,
+      DEBT_SWITCH_ADAPTER: AaveV2Avalanche.DEBT_SWAP_ADAPTER,
     },
     halIntegration: {
       URL: 'https://app.hal.xyz/recipes/aave-track-your-health-factor',
